@@ -2,6 +2,8 @@
 
 Landing page fan-made untuk Special Task Web Development Bayucaraka ITS 2027. Delapan karakter Marvel tampil di arena seleksi dengan profil, ilustrasi, dan tema warna masing-masing.
 
+[Buka website](https://samudsamudra.github.io/Yohanes_Capelliou_Samudra_5026261147_SistemInformasi_KPP-Webdev/)
+
 ## Menjalankan lokal
 
 Ekstrak folder proyek lalu buka `index.html` di Chrome, Edge, Firefox, atau Safari versi terbaru. Tidak perlu instalasi, build, atau koneksi internet.

@@ -159,6 +159,7 @@ img { display: block; max-width: 100%; }
 .intro em { display: block; color: var(--accent); font-style: normal; }
 .intro p { color: var(--muted); margin-top: 14px; max-width: 35ch; line-height: 1.5; font-size: .91rem; }
 .profiles, .profile { display: contents; }
+.profile { visibility: var(--profile-visibility, hidden); }
 
 .profile-copy {
   grid-column: 1;
@@ -168,9 +169,10 @@ img { display: block; max-width: 100%; }
   z-index: 2;
 }
 .profile-copy, .portrait {
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(7px);
+  visibility: inherit;
+  opacity: var(--profile-opacity, 0);
+  transform: var(--profile-entry, translateY(7px));
+  transition: var(--profile-transition, none);
   pointer-events: none;
 }
 .profile-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; color: var(--muted); font: .72rem/1.3 var(--mono); }
@@ -338,18 +340,18 @@ img { display: block; max-width: 100%; }
 .arena:has(#pick-moon-knight:checked) { --accent: #b8c8ee; }
 .arena:has(#pick-loki:checked) { --accent: #b4cf69; }
 
-.arena:has(#pick-deadpool:checked) .profile.deadpool > *,
-.arena:has(#pick-doom:checked) .profile.doom > *,
-.arena:has(#pick-spider-man:checked) .profile.spider-man > *,
-.arena:has(#pick-iron-man:checked) .profile.iron-man > *,
-.arena:has(#pick-wolverine:checked) .profile.wolverine > *,
-.arena:has(#pick-scarlet-witch:checked) .profile.scarlet-witch > *,
-.arena:has(#pick-moon-knight:checked) .profile.moon-knight > *,
-.arena:has(#pick-loki:checked) .profile.loki > * {
-  visibility: visible;
-  opacity: 1;
-  transform: none;
-  transition: opacity .4s ease .07s, transform .5s cubic-bezier(.2,.72,.26,1);
+.arena:has(#pick-deadpool:checked) .profile.deadpool,
+.arena:has(#pick-doom:checked) .profile.doom,
+.arena:has(#pick-spider-man:checked) .profile.spider-man,
+.arena:has(#pick-iron-man:checked) .profile.iron-man,
+.arena:has(#pick-wolverine:checked) .profile.wolverine,
+.arena:has(#pick-scarlet-witch:checked) .profile.scarlet-witch,
+.arena:has(#pick-moon-knight:checked) .profile.moon-knight,
+.arena:has(#pick-loki:checked) .profile.loki {
+  --profile-visibility: visible;
+  --profile-opacity: 1;
+  --profile-entry: none;
+  --profile-transition: opacity .4s ease .07s, transform .5s cubic-bezier(.2,.72,.26,1);
 }
 
 /* About and footer */
