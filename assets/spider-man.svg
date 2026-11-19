@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="576" height="620" viewBox="0 0 576 620">
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2=".9" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#ff999d"/><stop offset=".35" stop-color="#e24658"/><stop offset="1" stop-color="#322349"/></linearGradient>
+    <linearGradient id="body" x2=".8" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#245283"/><stop offset=".66" stop-color="#282037"/><stop offset="1" stop-color="#11101a"/></linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="white"/><stop offset=".8" stop-color="white"/><stop offset="1" stop-color="#000"/></linearGradient>
+    <linearGradient id="body-edge" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#ff999d"/><stop offset=".42" stop-color="#245283"/><stop offset="1" stop-color="#0e0e18"/></linearGradient>
+    <pattern id="hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 0v5" stroke="#fff" stroke-opacity=".12"/></pattern>
+    <clipPath id="cut"><path d="M34 555 79 439l83-57 36-111 20-96 76-44 91 45 17 95 13 107 110 76 18 106-109 28H139Z"/></clipPath>
+    <mask id="fade-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="576" height="620"><path d="M0 0h576v620H0z" fill="url(#fade)"/></mask>
+    <style>.shell{fill:url(#shell);stroke:#ff999d;stroke-width:2.1;stroke-linejoin:round}.shade{fill:#322349;opacity:.78}.black{fill:#12101c}.eye{fill:#fff6f0}.ink{fill:none;stroke:#17131f;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;opacity:.78}.shine{fill:none;stroke:#ff999d;stroke-width:2.2;stroke-linecap:round;opacity:.8}</style>
+  </defs>
+  <g fill="none" stroke="#e24658" opacity=".38">
+    <path d="M68 369 140 151l78-53h193l94 112-15 246-123 73-220-43z" stroke-width="1.2" stroke-dasharray="5 11"/>
+    <path d="M43 377 73 350m16-174 34-72 32-15m301 29 37 18 34 83m-20 217-37 38" stroke-width="2"/>
+    <path d="M104 218h20m-10-10v20m359 75h23m-12-12v24M40 443h14m-7-7v14m92-316h16m-8-7v14m310 66h14m-7-7v14m-15 319h14m-7-7v14"/>
+  </g>
+  <g mask="url(#fade-mask)">
+    <path d="M53 95 519 449M35 317l491-162M69 493 480 69M14 187l498 95M314 49l83 508M153 44l158 561M45 264q71 193 299 227M73 162q103 169 404 153M183 66q73 111 274 141" fill="none" stroke="#6398e0" stroke-width="1.8" opacity=".48"/>
+    <path d="M34 555 79 439l83-57 36-111 20-96 76-44 91 45 17 95 13 107 110 76 18 106-109 28H139Z" fill="url(#body)" stroke="url(#body-edge)" stroke-width="3"/>
+    <g clip-path="url(#cut)">
+      <path d="M21 518 95 414l110-37 53 35 59 14 80-57 99 34 77 117-109-27-45 65-67-31-68 61-89-63-54 23-42-69Z" fill="#245283" opacity=".65"/>
+      <path d="m12 546 101-91 77-35 43 34-21 66-80 50-46-37zm553 0-92-98-70-34-45 34 11 69 78 52 50-33z" fill="url(#hatch)"/>
+      <path d="m91 484 27-33 57-18 35 23m-69 50 36-31m256 4-39-35m58 9 48 27m-246-51 37 18 31-12m-73 11 42 20 43-19m-102 117 40-39m77 47-24-48" class="shine"/>
+      <path d="m75 507 65-50 46-12m234 1 48 13 57 48m-352 38 66-32 60 61 69-57 52 20" class="ink"/>
+      <path d="m99 570 43-60 45 29 84 45m216-15-46-51-34 25-68 46" fill="none" stroke="#100e19" stroke-width="13" opacity=".58"/>
+    </g>
+    <path class="shell" d="M199 252q-12-51 21-93 41-46 103-32 55 10 76 63l-5 83-37 65-65 45-53-28-34-45Z"/><path class="shade" d="m306 132 52 11 29 36 11 32-5 70-39 57-60 43 27-52 8-77z"/><path class="ink" d="m276 135 18 77 10 80-9 88m-65-219 25 99 33 38-46 44m121-191-29 84-30 59 38 52m-142-122 78 40 26 30 87-54m-179-61q71 30 172 1m-179 106q95-6 181-32m-142 89q76-11 121-71m-103-171q42 71 110 89"/><path class="black" d="M204 195q36 20 75 59-14 37-44 30-23-9-31-49zm188-4q-43 22-72 63 9 36 39 19 23-16 33-82z"/><path class="eye" d="M215 211q29 22 51 46-13 24-29 17-17-10-22-63zm164 0q-24 16-46 44 8 22 24 8 13-11 22-52z"/><path class="shine" d="m222 167 22-19 41-11m-48 181 18 27"/>
+  </g>
+  <path fill="#ff999d" opacity=".73" d="M114 303h3v3h-3zM477 270h2v2h-2zM434 154h4v3h-4zM130 254h3v3h-3zM487 364h3v3h-3zM87 361h3v3h-3zM411 95h2v2h-2zM168 118h3v2h-3z"/>
+</svg>
